@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "1stweeknodejs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Kacper K",
+  "license": "ISC",
+  "description": ""
+}
