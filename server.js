@@ -3,13 +3,11 @@ if (process.env.NODE_ENV !== 'production') {
 };
 
 const http = require('http');
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
+const app = express();
+app.use(express.static(__dirname + '/public'));
 
-server.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Running on port ${process.env.PORT}`)
 });
